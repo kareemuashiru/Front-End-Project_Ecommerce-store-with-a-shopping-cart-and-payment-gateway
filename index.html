@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style-project.css">
+</head>
+<body>
+            <!-- START CART MODAL VIEW -->
+    
+    <section id="modalSection">
+        <div id="content">  
+            <span class="close">&times;</span>            
+         <table id="table">
+            <tr  class="modaltable" id="tableHead">
+              <th >S/N</th>
+              <th >Item</th>
+              <th >Price</th> 
+              <th >Quantity</th>
+              <th></th>
+            </tr>
+           
+
+         </table>
+          <div id="formDiv">            
+            <input type="text" onmouseout="validName()" class="inputBox" name="name" id="modalName" placeholder="First and Last name" required>
+            <div class="errorColumn"></div>
+            <br>
+            <br>           
+            <input type="email" onmouseout="validEmail()"  class="inputBox" name="email" id="modalEmail" placeholder="Email" required>
+            <div class="errorColumn"></div>
+            <br>
+            <br>
+            <input onmouseout="validationNumber()"  class="inputBox" type="tel" name="phone" id="modalPhone" placeholder="Your phoe number" required>
+            <div class="errorColumn"></div>
+            <br>
+            <br>
+            <h1 class="modalAmount" > <b>Total Amount to be paid: </b>  </h1>
+            <h1 class="modalAmount" id="naira"> ₦ </h1>
+            <div id="modalSubmit">
+            <input type="button" value="Continue Shopping" class="modalbtn">
+            <input type="button" value="Checkout" class="modalbtn" >            
+            </div>
+          </div>
+        </div>
+    </section>
+             <!-- END CART MODAL VIEW -->
+
+        <!-- START SUCCESS/FAILED PAYMENT MODAL -->
+    <section id="successSection">
+        <div id="successDiv" >
+            <span class="close">&times;</span> 
+            <h1 class="success-content"><b>
+                Thanks you, <span id="customerName"></span> Your order has been received
+            </b></h1>
+           <div class="success-content" > <img src="images/check.svg" alt="" srcset="" width="30%">
+           </div>
+            <p class="summaryHead success-content" > SUMMARY </p>
+            <div class="summaryDiv">
+                
+            </div>            
+           </div>
+    </section>
+        <!-- END SUCCESS/FAILED PAYMENT MODAL -->            
+    
+
+
+                <!-- START NAVIGATION AND HERO MENU -->
+    <section id="intro">        
+            <nav id="nav-menu">
+                <img src="images/Distinct Innovative Solutions Logo.jpg" alt="Logo" width="50px">
+                <div id="navDiv">
+                    <a href="#intro" class="pagesLink" >Intro</a>
+                    <a href="#about-us" class="pagesLink">About</a>
+                    <a href="#productHead" class="pagesLink">Shop</a>
+                </div>                
+                <div id="shopcart">
+                    <i class="fa fa-shopping-cart" style="font-size:36px;color:rgb(230, 168, 168)" ></i>
+                    <i id="cartID" style="font-size:36px;color:rgb(230, 168, 168)" > 0 </i>
+
+                </div>
+            </nav>
+
+            <div id="hero">
+                <div id="heroText" ><b><h1>  DISTINCT <br> ONLINE STORE </h1></b></div>
+                <div>
+                    <img src="images/heroImage.svg" alt="" srcset="" width="100%" height="auto" margin-bottom"0px">
+                </div>
+            </div>
+          
+            <div id="shopnow" >
+                <button class="addToCart" > SHOP NOW </button>
+            </div> 
+    </section>
+                <!-- END NAVIGATION AND HER MENU -->
+
+
+                <!-- START ABOUT US -->
+
+    <section id="about-us">
+        <p>
+            Distinct Innovative Solution is an online store for all
+            sorts of items, We started operations in 2019, and we 
+            all sorts of items ranging from household items, electronics,
+            kids and Toys, clothing line, Kitchen utensils, Jewelries,
+            and a whole lot more. We also have a resller portals for buyers
+            and sellers of other products too. Check them all out and choose
+            what you are looking for
+        </p>
+    </section>
+                <!-- END ABOUT US -->
+
+
+                <!-- START PRODUCTS -->
+    <header>
+        <h1 id="productHead">OUR GADGETS</h1>
+    </header>
+   
+    <section id="products"> 
+
+        <div id="product1" class="productItems">                    
+            <div class="ProductImg" >
+                <img src="images/product1.png" alt="" width="100%" class="imagesPr" > 
+                <div style="background-color: rgba(0,0,0,0.4)" class="PriceDiv"><br><br><br><br> PRICE <br><br> ₦50000 </div>
+            </div>            
+            <h1> <b>SAMSUNG TV </b></h1>  
+            <button id="pr1" class="addToCart">ADD TO CART </button>
+        </div>
+        <div id="product2" class="productItems">
+            <div class="ProductImg">
+                <img src="images/product2.png" alt="" width="100%" class="imagesPr">
+                <div style="background-color: rgba(0,0,0,0.4); width: 100%;" class="PriceDiv"> <br><br><br><br> PRICE <br><br> ₦25000 </div>
+            </div>
+            <h1> <b> PIXEL 4A</b></h1> 
+            <button id="pr2" class="addToCart" >ADD TO CART </button>
+        </div>
+        <div id="product3" class="productItems">
+            <div class="ProductImg"> 
+                <img src="images/product3.png" alt="" width="100%" class="imagesPr"> 
+                <div style="background-color: rgba(0,0,0,0.4); width: 100%;" class="PriceDiv"> <br><br><br><br>PRICE <br><br> ₦30000 </div>
+            </div>
+            <h1> <b> PS 5 </b></h1> 
+            <button id="pr3" class="addToCart">ADD TO CART </button>
+        </div>
+        <div id="product4" class="productItems">
+            <div class="ProductImg"> 
+                <img src="images/product4.png" alt="" width="100%" class="imagesPr"> 
+                <div style="background-color: rgba(0,0,0,0.4); width: 100%;" class="PriceDiv"> <br><br><br><br> PRICE <br><br> ₦80000 </div>
+            </div>
+            <h1> <b>MACBOOK AIR</b></h1> 
+            <button id="pr4" class="addToCart">ADD TO CART </button>
+        </div>
+        <div id="product5" class="productItems">
+            <div class="ProductImg">
+                 <img src="images/product5.png" alt="" width="100%" class="imagesPr">
+                 <div style="background-color: rgba(0,0,0,0.4); width: 100%;" class="PriceDiv"> <br><br><br><br> PRICE <br><br> ₦95000 </div>
+                </div>
+            <h1> <b>APPLE WATCH</b></h1> 
+            <button id="pr5" class="addToCart">ADD TO CART </button>
+        </div>
+        <div id="product6" class="productItems">
+            <div class="ProductImg"> 
+                <img src="images/product6.png" alt="" width="100%" class="imagesPr"> 
+                <div style="background-color: rgba(0,0,0,0.4); width: 100%;" class="PriceDiv"> <br><br><br><br>PRICE <br><br> ₦75000 </div>                
+            </div>
+            <h1> <b>AIR PODS </b></h1> 
+            <button id="pr6" class="addToCart">ADD TO CART </button>
+        </div>
+    </section>
+
+                <!-- END PRODUCTS -->
+
+                <!-- START FOOTER -->
+
+    <section id="footer=section">
+        <footer id="footer" >
+            <div id="footerimg">
+                <img src="images/Distinct Innovative Solutions Logo.jpg" alt="Company Logo" srcset="" width="30px"> 
+            </div>
+            <div> &copy;
+                Designed and Created by Kareem Ashiru
+            </div>
+        </footer>
+    </section> 
+                <!-- END FOOTER -->
+
+    <script src="script-project.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script> 
+    </body>
+</html>
